@@ -1,0 +1,106 @@
+<html>
+
+	<head><title>Student ID Registration</title>
+	
+	<style>
+		
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+	}
+
+	body{
+		width: 100%;
+		min-height: 100vh;
+		background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(598673.jpg);
+		background-position:center;
+		background-size:cover;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+
+	}
+	.container{
+		width: 600px;
+		min-height: 900px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow:0 0 5px rgba(0, 0, 0, .3); 
+		padding: 40px 30px;
+	}
+	.container .register{
+		color: #111;
+		font-weight: 500;
+		font-face: arial;
+		font-size: 2.1rem;
+		text-align: center;
+		margin-bottom: 20px;
+		display: block;
+		text-transform: capitalize; 
+	}
+
+
+	.container .register-acc .input-group input{
+		width: 100%;
+		height: 5s0px;
+		border: 2px solid #e7e7e7;
+		padding: 15px 20px;
+		font-size: 1rem;
+		border-radius: 30px;
+		background: transparent;
+		outline: none;
+	}
+
+	.container .register-acc .input-group input:focus, .container .register-acc .input-group input:valid{
+		border-color: #a29bfe;
+	}
+
+	.container .register-acc .input-group .btn{
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		padding: 15px 20px;
+		text-align: center;
+		border: none;
+		background:#a29bfe;
+		outline: none;
+		border-radius: 30px;
+		font-size: 1.2rem;
+		color: #fff;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.container .register-acc .input-group .btn:hover{
+		transform: translateY(-5px);
+		background: #6c5ce7;
+	}
+		
+		
+	</style>
+	</head>
+	
+	<body>
+	
+<div class="container">
+		<h2 class="register">Student ID Registration</h2>
+
+
+	<form class="register-acc">
+		<center><h2>Register your Account</h2></center>
+		<div class="input-group">
+			<input type="StudentID" placeholder="Student ID" maxlength="12"s required>
+		</div>
+		<div class="input-group">
+			<input type="password" placeholder="Password" required>
+		</div>
+		<div class="input-group">
+			<button class="btn">Submit</button>
+		</div>
+	</div>
+	</form>
+<!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>-->
+		
+	</body>
+</html>
